@@ -1,14 +1,17 @@
 public class Main {
     public static void main(String[] args) {
 
-        int exist = 500;
-        int replenished = 1000;
+        int exist = 500; // было на счету
+        int replenished = 1000; // сумма пополнения
+
         int bonus = replenished / 100;
 
         if (replenished > 100) {
-            System.out.println(exist + replenished + bonus);
+            bonus = replenished / 100;
         } else {
-            System.out.println();
+          bonus = 0;
         }
+        int totally = exist + replenished + bonus;
+        System.out.println("Итоговый счет: " + totally + " руб."); System.out.println("Сумма бонуса: " + bonus + " руб.");
     }
 }
