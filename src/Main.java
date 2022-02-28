@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
 
         int exist = 500; // было на счету
-        int replenished = 1000; // сумма пополнения
+        int replenished = 2000; // сумма пополнения
 
         int bonus = replenished / 100;
 
